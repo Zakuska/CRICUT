@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CustomerManager</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    div.shroud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #808080; /* Standard gray [7] */
+      opacity: 0.6; /* Sets opacity */
+      z-index: 1000;
+    }
+
+    div.dialog {
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      right: 25px;
+      bottom: 25px;
+      background: white;
+      z-index: 1000;
+      border-radius: 15px;
+    }
+
+    .dialog-header {
+      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      margin-left: 15px;
+    }
+    
+    .icon-close {
+      position: absolute;
+      fill: firebrick;
+      cursor: pointer;
+      height: 25px;
+      width: 24px;
+      right: 15px;
+      top: 15px;
+    }
+
+    .icon-close:hover {
+      fill: red;
+    }
+    
+    div.dialog button {
+      cursor: pointer;
+    }
+
+    .w18 {
+      height: 18px;
+      width: 18px;
+    }
+
+    .delete-icon {
+      cursor: pointer;
+    }
+
+    .ag-cell-focus, .ag-cell-no-focus {
+        border: none !important;
+    }
+
+    .no-border.ag-cell:focus {
+        border: none !important;
+        outline: none !important; /* Removes the standard focus outline */
+    }    
+  </style>
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    setInterval(() => {
+      // Wire up delete icons!
+      const spans = document.querySelectorAll('span.delete-icon:not(.wired)');
+      spans.forEach(span => {
+        span.addEventListener("click",(e) => {          
+          var storedData = JSON.parse(localStorage.getItem('CustomerList'));
+          const idToRemove = e.target.closest('span.delete-icon').dataset.id;
+          console.log("DELETE: " + idToRemove);
+
+          // Create a new array that excludes the item with the specified id
+          const updatedData = storedData.filter(data => data.id !== idToRemove);
+
+          localStorage.setItem('CustomerList', JSON.stringify(updatedData));
+
+          window.location.href = window.location.href
+        });
+        span.classList.add('wired');
+      });
+    },100);
+    window.onload = function() {
+      // Code to execute after everything has loaded
+      console.log("Window fully loaded!");
+
+      setTimeout(() => {
+        var searchInput = document.getElementById("search-input");
+
+        var xIcon = document.getElementById("x-icon");
+        var gearIcon = document.getElementById("gear-icon");
+        var plusIcon = document.getElementById("+-icon");
+        
+        //var uploadIcon = document.getElementById("d-icon");
+        //var downloadIcon = document.getElementById("u-icon");
+        
+        function showShroud() {
+          var shroud = document.createElement("div");
+          var dlg = document.createElement("div");
+          shroud.classList.add("shroud");
+          document.body.append(shroud); 
+          shroud.addEventListener("click",(e) => {
+            dlg.remove();
+            shroud.remove();
+          });         
+          dlg.classList.add("dialog");
+          dlg.innerHTML = "<span id='close-button'></span>" + 
+            '<span id="close-icon"><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 119.79"><title>Close Window</title><path d="M23.5,0H99.38a23.56,23.56,0,0,1,23.5,23.5V96.29a23.56,23.56,0,0,1-23.5,23.5H23.5a23.44,23.44,0,0,1-16.6-6.9l-.37-.4A23.43,23.43,0,0,1,0,96.29V23.5A23.56,23.56,0,0,1,23.5,0ZM41,49.35a7,7,0,0,1,9.89-9.89L61.44,50,72,39.46a7,7,0,1,1,9.89,9.9L71.33,59.9,81.87,70.43A7,7,0,0,1,72,80.33L61.44,69.79,50.9,80.33A7,7,0,0,1,41,70.43L51.55,59.89,41,49.35ZM99.38,12.52H23.5a11,11,0,0,0-11,11V96.29a10.92,10.92,0,0,0,3,7.49l.27.26a11,11,0,0,0,7.75,3.23H99.38a11,11,0,0,0,11-11V23.5a11,11,0,0,0-11-11Z"/></svg></span>' +
+            '<h2 class="dialog-header">Customer List Configuration</h2><hr />' + 
+            '<button id="dl-button" title="Download customer list to device.">Download <svg class="w18" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 379.665"><path fill-rule="nonzero" d="M153.764 119.045c-7.838.332-13.409 2.935-16.619 7.822-8.724 13.076 3.18 25.996 11.443 35.099 23.441 25.724 80.888 87.554 92.454 101.161 8.768 9.694 21.25 9.694 30.017 0 11.948-13.959 72.287-78.603 94.569-103.627 7.731-8.705 17.292-20.579 9.239-32.633-3.287-4.887-8.798-7.49-16.636-7.822H310.65V22.868C310.65 10.31 300.346 0 287.779 0h-63.544c-12.572 0-22.871 10.294-22.871 22.868v96.177h-47.6zM.764 249.22c-2.622-10.841 1.793-19.331 8.852-24.343a24.765 24.765 0 018.47-3.837c3.039-.738 6.211-.913 9.258-.477 8.585 1.232 16.409 6.775 19.028 17.617a668.79 668.79 0 014.56 20.164 1259.306 1259.306 0 013.611 17.721c4.696 23.707 8.168 38.568 16.924 45.976 9.269 7.843 26.798 10.549 60.388 10.549h254.297c31.012 0 47.192-2.965 55.706-10.661 8.206-7.418 11.414-21.904 15.564-44.131a1212.673 1212.673 0 013.628-18.808c1.371-6.788 2.877-13.766 4.586-20.81 2.619-10.839 10.438-16.377 19.023-17.617 3.02-.433 6.173-.256 9.212.474 3.071.739 5.998 2.042 8.519 3.838 7.05 5.006 11.457 13.474 8.855 24.293l-.011.047a517.342 517.342 0 00-4.181 18.987c-1.063 5.281-2.289 11.852-3.464 18.145l-.008.046c-6.124 32.802-11.141 55.308-27.956 71.112-16.565 15.573-42.513 22.16-89.473 22.16H131.857c-49.096 0-76.074-5.911-93.429-21.279-17.783-15.75-23.173-38.615-30.047-73.314-1.39-7.029-2.728-13.739-3.638-18.091-1.281-6.11-2.6-12.082-3.979-17.761z"/></svg></button>' +
+            '<button id="ul-button" title="Upload customer list from device.">Upload <svg class="w18" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 379.661"><path fill-rule="nonzero" d="M153.764 151.353c-7.838-.333-13.409-2.935-16.619-7.822-8.724-13.076 3.18-25.997 11.443-35.099 23.441-25.725 80.888-87.554 92.454-101.162 8.768-9.693 21.25-9.693 30.017 0 11.948 13.959 72.287 78.604 94.569 103.628 7.731 8.705 17.292 20.579 9.239 32.633-3.287 4.887-8.798 7.489-16.636 7.822H310.65v96.177c0 12.558-10.304 22.868-22.871 22.868h-63.544c-12.572 0-22.871-10.294-22.871-22.868v-96.177h-47.6zm-153 97.863c-2.622-10.841 1.793-19.33 8.852-24.342a24.767 24.767 0 018.47-3.838c3.039-.738 6.211-.912 9.258-.476 8.585 1.232 16.409 6.775 19.028 17.616a668.81 668.81 0 014.56 20.165 1259.68 1259.68 0 013.611 17.72c4.696 23.707 8.168 38.569 16.924 45.976 9.269 7.844 26.798 10.55 60.388 10.55h254.297c31.012 0 47.192-2.965 55.706-10.662 8.206-7.418 11.414-21.903 15.564-44.131a1212.782 1212.782 0 013.628-18.807c1.371-6.789 2.877-13.766 4.586-20.811 2.619-10.838 10.438-16.376 19.023-17.616 3.02-.434 6.173-.256 9.212.474 3.071.738 5.998 2.041 8.519 3.837 7.05 5.007 11.457 13.474 8.855 24.294l-.011.046a517.834 517.834 0 00-4.181 18.988c-1.063 5.281-2.289 11.852-3.464 18.144l-.008.047c-6.124 32.802-11.141 55.308-27.956 71.112-16.565 15.572-42.513 22.159-89.473 22.159H131.857c-49.096 0-76.074-5.911-93.429-21.279-17.783-15.75-23.173-38.615-30.047-73.314-1.39-7.029-2.728-13.738-3.638-18.091-1.281-6.11-2.6-12.081-3.979-17.761z"/></svg></button>' + 
+            '<button id="gen-button" title="Generate customer list from data wharahouse.">Generate <svg class="w18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 114.36" style="enable-background:new 0 0 122.88 114.36" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M3.16,43.74h7.48V0h19.28v43.74h7.11V10.41h14.82v33.33h19.23v-14.1l22.16,14.1h4.03v-14.1l22.16,14.1h0.29 c1.74,0,3.17,1.43,3.17,3.17v64.29c0,1.74-1.43,3.17-3.17,3.17H3.16c-1.74,0-3.16-1.43-3.16-3.17V46.91 C0,45.17,1.42,43.74,3.16,43.74L3.16,43.74z M75.84,74.76H64.72c-0.5,0-0.91,0.41-0.91,0.91v11.12c0,0.5,0.41,0.91,0.91,0.91 l11.12,0c0.5,0,0.91-0.41,0.91-0.91V75.67C76.75,75.17,76.34,74.76,75.84,74.76L75.84,74.76z M76.75,58.1H65.63 c-0.5,0-0.91,0.41-0.91,0.91v11.12c0,0.5,0.41,0.91,0.91,0.91l11.12,0c0.5,0,0.91-0.41,0.91-0.91V59.01 C77.66,58.51,77.25,58.1,76.75,58.1L76.75,58.1z M85.17,59.01h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91 l-11.12,0c-0.5,0-0.91-0.41-0.91-0.91V59.92C84.26,59.42,84.67,59.01,85.17,59.01L85.17,59.01L85.17,59.01z M102.89,59.92h11.12 c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91h-11.12c-0.5,0-0.91-0.41-0.91-0.91V60.83 C101.98,60.33,102.39,59.92,102.89,59.92L102.89,59.92L102.89,59.92z M101.98,78.41h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12 c0,0.5-0.41,0.91-0.91,0.91l-11.12,0c-0.5,0-0.91-0.41-0.91-0.91V79.32C101.07,78.81,101.47,78.41,101.98,78.41L101.98,78.41 L101.98,78.41z M82.43,79.32h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91l-11.12,0 c-0.5,0-0.91-0.41-0.91-0.91V80.23C81.52,79.72,81.93,79.32,82.43,79.32L82.43,79.32z"/></g></svg></button>';
+          document.body.append(dlg);
+
+          var dlbutton = document.getElementById("dl-button");
+          dlbutton.addEventListener("click",(e) => {
+            // 1. Generated a TimeStamped Name
+            const d = new Date();
+            const year = d.getFullYear();
+            const month = String(d.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+            const day = String(d.getDate()).padStart(2, '0');
+            const hours = String(d.getHours()).padStart(2, '0');
+            const minutes = String(d.getMinutes()).padStart(2, '0');
+            const seconds = String(d.getSeconds()).padStart(2, '0');
+
+            const timestamp = `${year}-${month}-${day}-${hours}${minutes}${seconds}`;
+            //console.log(timestamp); // Output example: 2023-10-27-143022
+
+            var exportName = 'WB-Customer-List-' + timestamp;
+
+            const storedData = localStorage.getItem('CustomerList');
+
+            var exportObj = JSON.parse(storedData);
+
+/*
+            var exportObj = [ 
+              { id: 1, customer: "John Smith", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" },
+              { id: 2, customer: "Jane Doe", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" },
+              { id: 3, customer: "Taho", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" },
+              { id: 4, customer: "Corolla", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" }
+            ];
+*/
+
+            // Convert the object to a JSON string
+            const jsonStr = JSON.stringify(exportObj, null, 2); // null, 2 for pretty-printing
+
+            // Create a data URI
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(jsonStr);
+
+            // Create a temporary anchor element
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", exportName + ".json"); // Set the file name
+            
+            // Simulate a click to trigger the download
+            document.body.appendChild(downloadAnchorNode); // Required for Firefox
+            downloadAnchorNode.click();
+            
+            downloadAnchorNode.remove();
+          });
+
+          var ulbutton = document.getElementById("ul-button");
+          ulbutton.addEventListener("click",(e) => {
+            // 1. Create the input element dynamically
+            let input = document.createElement('input');
+            input.type = 'file';
+            input.style.display = 'none'; // Optional: keep it off-screen
+
+            // 2. Add an event listener to handle file selection
+            input.addEventListener('change', function(event) {
+              const files = event.target.files; // Get the selected files
+              console.log(files); // Process the files (e.g., upload or read them)
+              // You can use the FileReader API to read file contents
+              //TODO: Read file contents
+              const file = event.target.files[0]; // file is a Blob object
+
+              if (file) {
+                file.text().then((text) => {
+                  console.log(text);
+                  //TODO: save to local storage
+                  localStorage.setItem('CustomerList', text);
+                  //TODO: Refresh
+                  window.location.href = window.location.href;
+                }).catch((error) => {
+                  console.error(error);
+                });
+              }
+
+              //refresh page
+              input.remove();
+            });
+
+            // 3. Append to the document body (necessary for some browsers to trigger click)
+            document.body.appendChild(input);
+
+            // 4. Programmatically trigger the click event to open the dialog
+            input.click();
+
+            // 5. Clean up the element after the dialog is opened/closed
+            input.addEventListener('cancel', (event) => {
+              console.log('File selection cancelled by the user.');
+              input.remove();
+            });
+
+            // Note: The change event happens after selection is confirmed.
+            // The element can be removed once the action is complete, but is often kept to allow multiple uses or for simpler setup.
+          });
+
+          var genbutton = document.getElementById("gen-button");
+          genbutton.addEventListener("click",(e) => {
+            // TODO: Show Select for where to get the data from
+
+          });
+
+          var closeIcon = document.getElementById("close-icon");
+          closeIcon.addEventListener("click",(e) => {
+            dlg.remove();
+            shroud.remove();
+          });
+        }
+
+        function applySearchFilter(e) {
+
+        }
+
+        function updateXIcon()
+        {
+          if(searchInput.value == "")
+          {
+            xIcon.classList.add("hide");
+          } else {
+            xIcon.classList.remove("hide");
+          }
+        }
+
+        function uuidv4() {
+          return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
+            (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
+          );
+        }
+        
+        searchInput.addEventListener('click', (e) => { searchInput.select(); applySearchFilter(); });
+        searchInput.addEventListener('blur', (e) => { updateXIcon(); applySearchFilter(); });
+        searchInput.addEventListener('keyup', (e) => { updateXIcon(); applySearchFilter(); });
+
+        xIcon.addEventListener('click', (e) => { searchInput.value = ""; updateXIcon(); });
+        plusIcon.addEventListener('click', (e) => {
+          //TODO: Read Local Storage to string
+          const storedData = localStorage.getItem('CustomerList');
+          const importObj = JSON.parse(storedData);
+          var x = (importObj == null) ? 1 : importObj.length + 1;
+          const stringObj = JSON.stringify(importObj);
+          //TODO: append a record to string
+          var text = ((importObj == null) ? '[' : stringObj.slice(0, -1)) + 
+            ((x > 1) ? "," : "") + 
+            '{"id": "' + uuidv4() + '", "customer": "New Customer ' + (x) + 
+            '", "email": "a@b.c", "phone": "(999)999-9999", "address": "5050 s west", "city": "somewhereville", "state": "X", "zip": "00000" }' + 
+            ']';
+          console.log(text);  
+          //TODO: Save to Local Storage
+          localStorage.setItem('CustomerList', text);
+          //TODO: Refresh
+          window.location.href = window.location.href;
+        });
+        gearIcon.addEventListener('click', (e) => { showShroud(); });
+
+        //uploadIcon.addEventListener('click', (e) => { console.log(e); });
+        //downloadIcon.addEventListener('click', (e) => { console.log(e); });
+
+        // Function to save data to localStorage (for testing purposes)
+        function saveDataToLocalStorage(data) {
+          localStorage.setItem('CustomerList', JSON.stringify(data));
+        }
+
+        // Function to load data from localStorage and populate the grid
+        function loadDataFromLocalStorage(gridApi) {
+          const storedData = localStorage.getItem('CustomerList');
+
+          if (storedData) {
+            try {
+              const rowData = JSON.parse(storedData);
+              // Use the grid API to set the new row data
+              gridApi.setGridOption('rowData', rowData);
+              console.log('Row data loaded from localStorage');
+            } catch (error) {
+              console.error('Error parsing stored data:', error);
+              // Handle cases where stored data is corrupt
+              gridApi.setGridOption('rowData', []);
+            }
+          } else {
+            console.log('No row data found in localStorage, loading default data.');
+            // Optionally load default data or fetch from a server if nothing is stored
+            // const defaultData = [...];
+            // gridApi.setGridOption('rowData', defaultData);
+          }
+        }
+/*
+        // In your onGridReady function or main initialization logic:
+        const gridOptions = {
+          // ... other grid options (column definitions, etc.)
+          onGridReady: (params) => {
+            loadDataFromLocalStorage(params.api);
+            // ... other onGridReady logic
+          },
+        };
+
+*/
+        console.log('EVENTS READY!!!');
+        
+      },5);
+    };
+  </script>
+
+</body>
+</html>

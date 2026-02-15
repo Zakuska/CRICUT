@@ -50,6 +50,18 @@
     
     div.dialog button {
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 25px;
+    }
+    
+    div.dialog button svg {
+      margin-left: 10px;
+    }
+    
+    div.dialog input {
+      margin: 32px;
     }
 
     .w18 {
@@ -68,12 +80,52 @@
     .no-border.ag-cell:focus {
         border: none !important;
         outline: none !important; /* Removes the standard focus outline */
+    }
+
+    .flex {
+      display: flex;
     }    
   </style>
 </head>
 <body>
   <app-root></app-root>
   <script>
+
+    function jsonToCsv(jsonString) {
+      // 1. Parse the JSON string into a JavaScript array of objects
+      const dataArray = JSON.parse(jsonString);
+      
+      if (!Array.isArray(dataArray) || dataArray.length === 0) {
+        return '';
+      }
+
+      // 2. Extract the headers (keys) from the first object
+      const headers = Object.keys(dataArray[0]);
+      
+      // Define a replacer function to handle null or undefined values
+      const replacer = (key, value) => value === null || value === undefined ? '' : value;
+
+      // 3. Create the CSV header row
+      let csv = headers.join(',') + '\\r\\n';
+
+      // 4. Map the data rows to CSV format
+      const csvRows = dataArray.map(row => {
+        return headers.map(fieldName => {
+          // Use JSON.stringify to handle cases like commas in a field value and null values
+          const value = JSON.stringify(row[fieldName], replacer);
+          // Optional: Replace escaped quotes (e.g., \\" to "") for better Excel compatibility
+          return value ? value.replace(/\\"/g, '""') : '';
+        }).join(',');
+      });
+
+      // 5. Join all rows to form the final CSV string
+      csv += csvRows.join('\\r\\n');
+
+      return csv;
+    }
+
+
+
     setInterval(() => {
       // Wire up delete icons!
       const spans = document.querySelectorAll('span.delete-icon:not(.wired)');
@@ -93,6 +145,7 @@
         span.classList.add('wired');
       });
     },100);
+
     window.onload = function() {
       // Code to execute after everything has loaded
       console.log("Window fully loaded!");
@@ -120,9 +173,17 @@
           dlg.innerHTML = "<span id='close-button'></span>" + 
             '<span id="close-icon"><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 119.79"><title>Close Window</title><path d="M23.5,0H99.38a23.56,23.56,0,0,1,23.5,23.5V96.29a23.56,23.56,0,0,1-23.5,23.5H23.5a23.44,23.44,0,0,1-16.6-6.9l-.37-.4A23.43,23.43,0,0,1,0,96.29V23.5A23.56,23.56,0,0,1,23.5,0ZM41,49.35a7,7,0,0,1,9.89-9.89L61.44,50,72,39.46a7,7,0,1,1,9.89,9.9L71.33,59.9,81.87,70.43A7,7,0,0,1,72,80.33L61.44,69.79,50.9,80.33A7,7,0,0,1,41,70.43L51.55,59.89,41,49.35ZM99.38,12.52H23.5a11,11,0,0,0-11,11V96.29a10.92,10.92,0,0,0,3,7.49l.27.26a11,11,0,0,0,7.75,3.23H99.38a11,11,0,0,0,11-11V23.5a11,11,0,0,0-11-11Z"/></svg></span>' +
             '<h2 class="dialog-header">Customer List Configuration</h2><hr />' + 
+            '<div>' +
+            '<div class="flex">' +
             '<button id="dl-button" title="Download customer list to device.">Download <svg class="w18" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 379.665"><path fill-rule="nonzero" d="M153.764 119.045c-7.838.332-13.409 2.935-16.619 7.822-8.724 13.076 3.18 25.996 11.443 35.099 23.441 25.724 80.888 87.554 92.454 101.161 8.768 9.694 21.25 9.694 30.017 0 11.948-13.959 72.287-78.603 94.569-103.627 7.731-8.705 17.292-20.579 9.239-32.633-3.287-4.887-8.798-7.49-16.636-7.822H310.65V22.868C310.65 10.31 300.346 0 287.779 0h-63.544c-12.572 0-22.871 10.294-22.871 22.868v96.177h-47.6zM.764 249.22c-2.622-10.841 1.793-19.331 8.852-24.343a24.765 24.765 0 018.47-3.837c3.039-.738 6.211-.913 9.258-.477 8.585 1.232 16.409 6.775 19.028 17.617a668.79 668.79 0 014.56 20.164 1259.306 1259.306 0 013.611 17.721c4.696 23.707 8.168 38.568 16.924 45.976 9.269 7.843 26.798 10.549 60.388 10.549h254.297c31.012 0 47.192-2.965 55.706-10.661 8.206-7.418 11.414-21.904 15.564-44.131a1212.673 1212.673 0 013.628-18.808c1.371-6.788 2.877-13.766 4.586-20.81 2.619-10.839 10.438-16.377 19.023-17.617 3.02-.433 6.173-.256 9.212.474 3.071.739 5.998 2.042 8.519 3.838 7.05 5.006 11.457 13.474 8.855 24.293l-.011.047a517.342 517.342 0 00-4.181 18.987c-1.063 5.281-2.289 11.852-3.464 18.145l-.008.046c-6.124 32.802-11.141 55.308-27.956 71.112-16.565 15.573-42.513 22.16-89.473 22.16H131.857c-49.096 0-76.074-5.911-93.429-21.279-17.783-15.75-23.173-38.615-30.047-73.314-1.39-7.029-2.728-13.739-3.638-18.091-1.281-6.11-2.6-12.082-3.979-17.761z"/></svg></button>' +
+            '<label><input id="fmt-json" type="radio" name="format" value="JSON" checked="true"> JSON</label>' +
+            '<label><input id="fmt-csv" type="radio" name="format" value="csv"> CSV</label>' +
+            '</div><br/>' +
+            '<div class="flex">' +
             '<button id="ul-button" title="Upload customer list from device.">Upload <svg class="w18" xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 379.661"><path fill-rule="nonzero" d="M153.764 151.353c-7.838-.333-13.409-2.935-16.619-7.822-8.724-13.076 3.18-25.997 11.443-35.099 23.441-25.725 80.888-87.554 92.454-101.162 8.768-9.693 21.25-9.693 30.017 0 11.948 13.959 72.287 78.604 94.569 103.628 7.731 8.705 17.292 20.579 9.239 32.633-3.287 4.887-8.798 7.489-16.636 7.822H310.65v96.177c0 12.558-10.304 22.868-22.871 22.868h-63.544c-12.572 0-22.871-10.294-22.871-22.868v-96.177h-47.6zm-153 97.863c-2.622-10.841 1.793-19.33 8.852-24.342a24.767 24.767 0 018.47-3.838c3.039-.738 6.211-.912 9.258-.476 8.585 1.232 16.409 6.775 19.028 17.616a668.81 668.81 0 014.56 20.165 1259.68 1259.68 0 013.611 17.72c4.696 23.707 8.168 38.569 16.924 45.976 9.269 7.844 26.798 10.55 60.388 10.55h254.297c31.012 0 47.192-2.965 55.706-10.662 8.206-7.418 11.414-21.903 15.564-44.131a1212.782 1212.782 0 013.628-18.807c1.371-6.789 2.877-13.766 4.586-20.811 2.619-10.838 10.438-16.376 19.023-17.616 3.02-.434 6.173-.256 9.212.474 3.071.738 5.998 2.041 8.519 3.837 7.05 5.007 11.457 13.474 8.855 24.294l-.011.046a517.834 517.834 0 00-4.181 18.988c-1.063 5.281-2.289 11.852-3.464 18.144l-.008.047c-6.124 32.802-11.141 55.308-27.956 71.112-16.565 15.572-42.513 22.159-89.473 22.159H131.857c-49.096 0-76.074-5.911-93.429-21.279-17.783-15.75-23.173-38.615-30.047-73.314-1.39-7.029-2.728-13.738-3.638-18.091-1.281-6.11-2.6-12.081-3.979-17.761z"/></svg></button>' + 
-            '<button id="gen-button" title="Generate customer list from data wharahouse.">Generate <svg class="w18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 114.36" style="enable-background:new 0 0 122.88 114.36" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M3.16,43.74h7.48V0h19.28v43.74h7.11V10.41h14.82v33.33h19.23v-14.1l22.16,14.1h4.03v-14.1l22.16,14.1h0.29 c1.74,0,3.17,1.43,3.17,3.17v64.29c0,1.74-1.43,3.17-3.17,3.17H3.16c-1.74,0-3.16-1.43-3.16-3.17V46.91 C0,45.17,1.42,43.74,3.16,43.74L3.16,43.74z M75.84,74.76H64.72c-0.5,0-0.91,0.41-0.91,0.91v11.12c0,0.5,0.41,0.91,0.91,0.91 l11.12,0c0.5,0,0.91-0.41,0.91-0.91V75.67C76.75,75.17,76.34,74.76,75.84,74.76L75.84,74.76z M76.75,58.1H65.63 c-0.5,0-0.91,0.41-0.91,0.91v11.12c0,0.5,0.41,0.91,0.91,0.91l11.12,0c0.5,0,0.91-0.41,0.91-0.91V59.01 C77.66,58.51,77.25,58.1,76.75,58.1L76.75,58.1z M85.17,59.01h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91 l-11.12,0c-0.5,0-0.91-0.41-0.91-0.91V59.92C84.26,59.42,84.67,59.01,85.17,59.01L85.17,59.01L85.17,59.01z M102.89,59.92h11.12 c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91h-11.12c-0.5,0-0.91-0.41-0.91-0.91V60.83 C101.98,60.33,102.39,59.92,102.89,59.92L102.89,59.92L102.89,59.92z M101.98,78.41h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12 c0,0.5-0.41,0.91-0.91,0.91l-11.12,0c-0.5,0-0.91-0.41-0.91-0.91V79.32C101.07,78.81,101.47,78.41,101.98,78.41L101.98,78.41 L101.98,78.41z M82.43,79.32h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91l-11.12,0 c-0.5,0-0.91-0.41-0.91-0.91V80.23C81.52,79.72,81.93,79.32,82.43,79.32L82.43,79.32z"/></g></svg></button>';
+            '</div>' +
+            '<button id="gen-button" title="Generate customer list from data wharahouse.">Generate <svg class="w18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 114.36" style="enable-background:new 0 0 122.88 114.36" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;}</style><g><path class="st0" d="M3.16,43.74h7.48V0h19.28v43.74h7.11V10.41h14.82v33.33h19.23v-14.1l22.16,14.1h4.03v-14.1l22.16,14.1h0.29 c1.74,0,3.17,1.43,3.17,3.17v64.29c0,1.74-1.43,3.17-3.17,3.17H3.16c-1.74,0-3.16-1.43-3.16-3.17V46.91 C0,45.17,1.42,43.74,3.16,43.74L3.16,43.74z M75.84,74.76H64.72c-0.5,0-0.91,0.41-0.91,0.91v11.12c0,0.5,0.41,0.91,0.91,0.91 l11.12,0c0.5,0,0.91-0.41,0.91-0.91V75.67C76.75,75.17,76.34,74.76,75.84,74.76L75.84,74.76z M76.75,58.1H65.63 c-0.5,0-0.91,0.41-0.91,0.91v11.12c0,0.5,0.41,0.91,0.91,0.91l11.12,0c0.5,0,0.91-0.41,0.91-0.91V59.01 C77.66,58.51,77.25,58.1,76.75,58.1L76.75,58.1z M85.17,59.01h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91 l-11.12,0c-0.5,0-0.91-0.41-0.91-0.91V59.92C84.26,59.42,84.67,59.01,85.17,59.01L85.17,59.01L85.17,59.01z M102.89,59.92h11.12 c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91h-11.12c-0.5,0-0.91-0.41-0.91-0.91V60.83 C101.98,60.33,102.39,59.92,102.89,59.92L102.89,59.92L102.89,59.92z M101.98,78.41h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12 c0,0.5-0.41,0.91-0.91,0.91l-11.12,0c-0.5,0-0.91-0.41-0.91-0.91V79.32C101.07,78.81,101.47,78.41,101.98,78.41L101.98,78.41 L101.98,78.41z M82.43,79.32h11.12c0.5,0,0.91,0.41,0.91,0.91v11.12c0,0.5-0.41,0.91-0.91,0.91l-11.12,0 c-0.5,0-0.91-0.41-0.91-0.91V80.23C81.52,79.72,81.93,79.32,82.43,79.32L82.43,79.32z"/></g></svg></button>' + 
+            '</div>';
           document.body.append(dlg);
 
           var dlbutton = document.getElementById("dl-button");
@@ -139,31 +200,32 @@
             const timestamp = `${year}-${month}-${day}-${hours}${minutes}${seconds}`;
             //console.log(timestamp); // Output example: 2023-10-27-143022
 
-            var exportName = 'WB-Customer-List-' + timestamp;
+            var exportName = 'WB-Customer-List-' + timestamp  +  ((document.getElementById('fmt-csv').checked) ? ".csv" : ".json");
 
             const storedData = localStorage.getItem('CustomerList');
 
             var exportObj = JSON.parse(storedData);
 
-/*
-            var exportObj = [ 
-              { id: 1, customer: "John Smith", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" },
-              { id: 2, customer: "Jane Doe", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" },
-              { id: 3, customer: "Taho", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" },
-              { id: 4, customer: "Corolla", email: "a@b.c", phone: "(000)000-0000", address: "5050 s west", city: "somewhereville", state: "X", zip: "00000" }
-            ];
-*/
-
             // Convert the object to a JSON string
-            const jsonStr = JSON.stringify(exportObj, null, 2); // null, 2 for pretty-printing
+            var jsonStr = JSON.stringify(exportObj, null, 2); // null, 2 for pretty-printing
+
+            if(document.getElementById('fmt-csv').checked)
+            {
+              //TODO: convert jsonStr to CSV
+              jsonStr = jsonToCsv(jsonStr)
+              console.log(jsonStr);
+            }
 
             // Create a data URI
-            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(jsonStr);
+            const dataStr = ((document.getElementById('fmt-csv').checked )
+              ? "data:text/csv;charset=utf-8,"
+              : "data:text/json;charset=utf-8,") + 
+              encodeURIComponent(jsonStr);
 
             // Create a temporary anchor element
             const downloadAnchorNode = document.createElement('a');
             downloadAnchorNode.setAttribute("href", dataStr);
-            downloadAnchorNode.setAttribute("download", exportName + ".json"); // Set the file name
+            downloadAnchorNode.setAttribute("download", exportName); // Set the file name
             
             // Simulate a click to trigger the download
             document.body.appendChild(downloadAnchorNode); // Required for Firefox
@@ -232,10 +294,6 @@
           });
         }
 
-        function applySearchFilter(e) {
-
-        }
-
         function updateXIcon()
         {
           if(searchInput.value == "")
@@ -258,12 +316,10 @@
 
         xIcon.addEventListener('click', (e) => { searchInput.value = ""; updateXIcon(); });
         plusIcon.addEventListener('click', (e) => {
-          //TODO: Read Local Storage to string
           const storedData = localStorage.getItem('CustomerList');
           const importObj = JSON.parse(storedData);
           var x = (importObj == null) ? 1 : importObj.length + 1;
           const stringObj = JSON.stringify(importObj);
-          //TODO: append a record to string
           var text = ((importObj == null) ? '[' : stringObj.slice(0, -1)) + 
             ((x > 1) ? "," : "") + 
             '{"id": "' + uuidv4() + '", "customer": "New Customer ' + (x) + 
@@ -307,20 +363,10 @@
             // gridApi.setGridOption('rowData', defaultData);
           }
         }
-/*
-        // In your onGridReady function or main initialization logic:
-        const gridOptions = {
-          // ... other grid options (column definitions, etc.)
-          onGridReady: (params) => {
-            loadDataFromLocalStorage(params.api);
-            // ... other onGridReady logic
-          },
-        };
 
-*/
         console.log('EVENTS READY!!!');
         
-      },5);
+      }, 5);
     };
   </script>
 

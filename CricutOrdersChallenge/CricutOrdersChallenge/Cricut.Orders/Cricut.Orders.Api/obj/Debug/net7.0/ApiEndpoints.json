@@ -1,0 +1,54 @@
+[
+  {
+    "ContainingType": "Cricut.Orders.Api.Controllers.OrdersController",
+    "Method": "CreateNewOrderAsync",
+    "RelativePath": "v1/orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newOrderVM",
+        "Type": "Cricut.Orders.Api.ViewModels.NewOrderViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Cricut.Orders.Api.ViewModels.OrderViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Cricut.Orders.Api.Controllers.OrdersController",
+    "Method": "OrdersAsync",
+    "RelativePath": "v1/orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Cricut.Orders.Api.ViewModels.OrderViewModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

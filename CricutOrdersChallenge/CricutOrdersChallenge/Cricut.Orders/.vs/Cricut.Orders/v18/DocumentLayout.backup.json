@@ -1,0 +1,349 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\orderdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\orderdomain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27A49260-DB77-4696-A882-4009D8803511}|Cricut.Orders.Integration.Tests\\Cricut.Orders.Integration.Tests.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.integration.tests\\orderintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27A49260-DB77-4696-A882-4009D8803511}|Cricut.Orders.Integration.Tests\\Cricut.Orders.Integration.Tests.csproj|solutionrelative:cricut.orders.integration.tests\\orderintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18C819F0-C06B-49EC-A821-A538726118EE}|Cricut.Orders.Infrastructure\\Cricut.Orders.Infrastructure.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.infrastructure\\orderstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18C819F0-C06B-49EC-A821-A538726118EE}|Cricut.Orders.Infrastructure\\Cricut.Orders.Infrastructure.csproj|solutionrelative:cricut.orders.infrastructure\\orderstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\mappings\\toviewmodelmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\mappings\\toviewmodelmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D4A176-ED01-49B8-8C76-C3D3C871E32E}|Cricut.Orders.Tests\\Cricut.Orders.Tests.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.tests\\cricut.orders.api\\mappings\\toviewmodelmappingstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D4A176-ED01-49B8-8C76-C3D3C871E32E}|Cricut.Orders.Tests\\Cricut.Orders.Tests.csproj|solutionrelative:cricut.orders.tests\\cricut.orders.api\\mappings\\toviewmodelmappingstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\viewmodels\\orderitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\viewmodels\\orderitemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\viewmodels\\productviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D4A176-ED01-49B8-8C76-C3D3C871E32E}|Cricut.Orders.Tests\\Cricut.Orders.Tests.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.tests\\cricut.orders.infrastructure\\orderstoretests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D4A176-ED01-49B8-8C76-C3D3C871E32E}|Cricut.Orders.Tests\\Cricut.Orders.Tests.csproj|solutionrelative:cricut.orders.tests\\cricut.orders.infrastructure\\orderstoretests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\mappings\\todomainmodelmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\mappings\\todomainmodelmappings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\iorderstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\iorderstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\viewmodels\\neworderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\viewmodels\\neworderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF2F22C8-FD38-44DE-988D-96FB40A946D4}|Cricut.Orders.Api\\Cricut.Orders.Api.csproj|solutionrelative:cricut.orders.api\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18C819F0-C06B-49EC-A821-A538726118EE}|Cricut.Orders.Infrastructure\\Cricut.Orders.Infrastructure.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18C819F0-C06B-49EC-A821-A538726118EE}|Cricut.Orders.Infrastructure\\Cricut.Orders.Infrastructure.csproj|solutionrelative:cricut.orders.infrastructure\\extensions\\servicecollectionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89D4A176-ED01-49B8-8C76-C3D3C871E32E}|Cricut.Orders.Tests\\Cricut.Orders.Tests.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.tests\\cricut.orders.api\\mappings\\todomainmodelmappingstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89D4A176-ED01-49B8-8C76-C3D3C871E32E}|Cricut.Orders.Tests\\Cricut.Orders.Tests.csproj|solutionrelative:cricut.orders.tests\\cricut.orders.api\\mappings\\todomainmodelmappingstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|c:\\users\\josep_rfwdlkq\\onedrive\\documents\\github\\cricut\\cricutorderschallenge\\cricutorderschallenge\\cricut.orders\\cricut.orders.domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BA4EB88-3D4A-4C42-8007-5866D97208BA}|Cricut.Orders.Domain\\Cricut.Orders.Domain.csproj|solutionrelative:cricut.orders.domain\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrderDomain.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\OrderDomain.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\OrderDomain.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\OrderDomain.cs*",
+              "RelativeToolTip": "Cricut.Orders.Domain\\OrderDomain.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T18:27:23.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderStore.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Infrastructure\\OrderStore.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Infrastructure\\OrderStore.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Infrastructure\\OrderStore.cs",
+              "RelativeToolTip": "Cricut.Orders.Infrastructure\\OrderStore.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAxwCgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T17:31:42.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderIntegrationTests.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Integration.Tests\\OrderIntegrationTests.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Integration.Tests\\OrderIntegrationTests.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Integration.Tests\\OrderIntegrationTests.cs",
+              "RelativeToolTip": "Cricut.Orders.Integration.Tests\\OrderIntegrationTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\Order.cs",
+              "RelativeToolTip": "Cricut.Orders.Domain\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToViewModelMappings.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Mappings\\ToViewModelMappings.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\Mappings\\ToViewModelMappings.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Mappings\\ToViewModelMappings.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\Mappings\\ToViewModelMappings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ToViewModelMappingsTests.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToViewModelMappingsTests.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToViewModelMappingsTests.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToViewModelMappingsTests.cs",
+              "RelativeToolTip": "Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToViewModelMappingsTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OrderItemViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\ViewModels\\OrderItemViewModel.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\ViewModels\\OrderItemViewModel.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\ViewModels\\OrderItemViewModel.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\ViewModels\\OrderItemViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\ViewModels\\ProductViewModel.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\ViewModels\\ProductViewModel.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\ViewModels\\ProductViewModel.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\ViewModels\\ProductViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ToDomainModelMappings.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Mappings\\ToDomainModelMappings.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\Mappings\\ToDomainModelMappings.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Mappings\\ToDomainModelMappings.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\Mappings\\ToDomainModelMappings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderStoreTests.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Tests\\Cricut.Orders.Infrastructure\\OrderStoreTests.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Tests\\Cricut.Orders.Infrastructure\\OrderStoreTests.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Tests\\Cricut.Orders.Infrastructure\\OrderStoreTests.cs",
+              "RelativeToolTip": "Cricut.Orders.Tests\\Cricut.Orders.Infrastructure\\OrderStoreTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IOrderStore.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\IOrderStore.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\IOrderStore.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\IOrderStore.cs",
+              "RelativeToolTip": "Cricut.Orders.Domain\\IOrderStore.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Cricut.Orders.Domain\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Startup.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\Startup.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\Startup.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NewOrderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\ViewModels\\NewOrderViewModel.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Api\\ViewModels\\NewOrderViewModel.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Api\\ViewModels\\NewOrderViewModel.cs",
+              "RelativeToolTip": "Cricut.Orders.Api\\ViewModels\\NewOrderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\OrderItem.cs",
+              "RelativeToolTip": "Cricut.Orders.Domain\\Models\\OrderItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAkwAgAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ToDomainModelMappingsTests.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToDomainModelMappingsTests.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToDomainModelMappingsTests.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToDomainModelMappingsTests.cs",
+              "RelativeToolTip": "Cricut.Orders.Tests\\Cricut.Orders.Api\\Mappings\\ToDomainModelMappingsTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ServiceCollectionExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "RelativeToolTip": "Cricut.Orders.Infrastructure\\Extensions\\ServiceCollectionExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\Product.cs",
+              "RelativeToolTip": "Cricut.Orders.Domain\\Models\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Cricut.Orders.Domain\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\josep_rfwdlkq\\OneDrive\\Documents\\GitHub\\CRICUT\\CricutOrdersChallenge\\CricutOrdersChallenge\\Cricut.Orders\\Cricut.Orders.Domain\\Models\\Customer.cs",
+              "RelativeToolTip": "Cricut.Orders.Domain\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-16T05:47:26.309Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

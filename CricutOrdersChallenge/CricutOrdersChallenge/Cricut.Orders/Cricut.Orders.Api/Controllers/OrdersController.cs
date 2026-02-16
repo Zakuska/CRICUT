@@ -23,5 +23,15 @@ namespace Cricut.Orders.Api.Controllers
             var savedOrder = await _orderDomain.CreateNewOrderAsync(newOrder);
             return Ok(savedOrder.ToViewModel());
         }
+
+        [HttpGet]
+        public async Task<ActionResult<OrderViewModel>> OrdersAsync(int orderId)
+        {
+            var theOrder = await _orderDomain.FetchOrderAsync(orderId);
+            return Ok(theOrder);
+        }
+
+
+
     }
 }

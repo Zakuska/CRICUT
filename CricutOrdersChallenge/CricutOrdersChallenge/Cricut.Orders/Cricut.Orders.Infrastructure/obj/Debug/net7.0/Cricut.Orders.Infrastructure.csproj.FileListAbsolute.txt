@@ -1,0 +1,16 @@
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\bin\Debug\net7.0\Cricut.Orders.Infrastructure.deps.json
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\bin\Debug\net7.0\Cricut.Orders.Infrastructure.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\bin\Debug\net7.0\Cricut.Orders.Infrastructure.pdb
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\bin\Debug\net7.0\Cricut.Orders.Domain.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\bin\Debug\net7.0\Cricut.Orders.Domain.pdb
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.AssemblyInfo.cs
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.sourcelink.json
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.O.E0D887B9.Up2Date
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\refint\Cricut.Orders.Infrastructure.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\Cricut.Orders.Infrastructure.pdb
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Infrastructure\obj\Debug\net7.0\ref\Cricut.Orders.Infrastructure.dll

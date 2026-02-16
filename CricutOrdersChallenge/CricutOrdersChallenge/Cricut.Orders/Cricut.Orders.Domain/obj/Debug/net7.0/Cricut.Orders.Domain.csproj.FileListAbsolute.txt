@@ -1,0 +1,13 @@
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\bin\Debug\net7.0\Cricut.Orders.Domain.deps.json
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\bin\Debug\net7.0\Cricut.Orders.Domain.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\bin\Debug\net7.0\Cricut.Orders.Domain.pdb
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.csproj.AssemblyReference.cache
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.AssemblyInfoInputs.cache
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.AssemblyInfo.cs
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.csproj.CoreCompileInputs.cache
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.sourcelink.json
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\refint\Cricut.Orders.Domain.dll
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\Cricut.Orders.Domain.pdb
+C:\Users\josep_rfwdlkq\OneDrive\Documents\GitHub\CRICUT\CricutOrdersChallenge\CricutOrdersChallenge\Cricut.Orders\Cricut.Orders.Domain\obj\Debug\net7.0\ref\Cricut.Orders.Domain.dll

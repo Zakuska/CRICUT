@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cricut.Orders.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+892a47ea125e9a25f0eb44a500b48218dcd0f2fe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a583019954fdf3eb524f548d9d5eeffe0348d19c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cricut.Orders.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cricut.Orders.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
